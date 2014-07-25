@@ -1,7 +1,7 @@
 Custom theme on WordPress
 ===
 
-This is a custome theme built for Floating Orchard.  At the time of launch, this was built for 3.9.1.
+This is a custom theme built for Floating Orchard.  At the time of launch, this was built for 3.9.1.
 
 Stylesheet
 ---------------
