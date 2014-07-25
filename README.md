@@ -1,15 +1,15 @@
-Floating Orchard custom theme on WordPress
+Custom theme on WordPress
 ===
 
 This is a custome theme built for Floating Orchard.  At the time of launch, this was built for 3.9.1.
 
-Stylesheet <code>style.css</code>
+Stylesheet
 ---------------
 
-1.  The stylesheet is outputed in a compressed format using the Compass compiler.
+1.  The <code>style.css</code> is outputed in a compressed format using the Compass compiler.
 2.  The homepage is built on <code>front-page.php</code>
 
-_s Starter Theme
+_s
 ---------------
 
 This custom theme was built on top of starter theme called <code>_s</code>.  Basic documentation can be found at <a href="http://underscores.me">http://underscores.me</a>.
