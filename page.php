@@ -12,7 +12,7 @@
 
 get_header(); ?>
 
-	<div class="row page-container">
+	<div class="row page-container section">
 		<div class="large-12 columns">
 
 			<?php while ( have_posts() ) : the_post(); ?>

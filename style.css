@@ -9316,88 +9316,94 @@ label {
   background-size: cover;
   background-position: top center;
   background-color: #f7f7f7;
+}
+/* line 15, sass/pages/_home.scss */
+.splash .section {
   padding-bottom: 2.6rem;
   padding-top: 15rem;
 }
-/* line 18, sass/pages/_home.scss */
+/* line 19, sass/pages/_home.scss */
 .splash p {
   color: #333333;
 }
 
-/* line 24, sass/pages/_home.scss */
+/* line 25, sass/pages/_home.scss */
 .commitment-content {
   padding-bottom: 2.8rem;
 }
 
-/* line 29, sass/pages/_home.scss */
+/* line 30, sass/pages/_home.scss */
 .core-commitments {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
 }
-/* line 33, sass/pages/_home.scss */
+/* line 34, sass/pages/_home.scss */
 .core-commitments p {
   color: #4b4a4a;
 }
 
-/* line 41, sass/pages/_home.scss */
+/* line 42, sass/pages/_home.scss */
 .orchard-features h3 {
   color: #4b4a4a;
   font-size: 20px;
 }
-/* line 46, sass/pages/_home.scss */
+/* line 47, sass/pages/_home.scss */
 .orchard-features p {
   color: #666666;
   font-size: .875rem;
 }
 
-/* line 57, sass/pages/_home.scss */
+/* line 58, sass/pages/_home.scss */
 .our-customers {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: right top;
   background-color: #2b2b2b;
+}
+/* line 66, sass/pages/_home.scss */
+.our-customers .row {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-/* line 67, sass/pages/_home.scss */
+/* line 71, sass/pages/_home.scss */
 .our-customers h2 {
   color: #f2f2f2;
 }
-/* line 70, sass/pages/_home.scss */
+/* line 74, sass/pages/_home.scss */
 .our-customers p {
   color: #dddddd;
 }
 
-/* line 75, sass/pages/_home.scss */
+/* line 79, sass/pages/_home.scss */
 .partnerships, .cloud-technologies .row {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
 }
-/* line 80, sass/pages/_home.scss */
+/* line 84, sass/pages/_home.scss */
 .partnerships h2, .cloud-technologies .row h2 {
   color: #333333;
 }
-/* line 84, sass/pages/_home.scss */
+/* line 88, sass/pages/_home.scss */
 .partnerships p, .cloud-technologies .row p {
   color: #4b4a4a;
 }
 
-/* line 90, sass/pages/_home.scss */
+/* line 94, sass/pages/_home.scss */
 .cloud-technologies {
   background: #f7f7f7;
 }
-/* line 93, sass/pages/_home.scss */
+/* line 97, sass/pages/_home.scss */
 .cloud-technologies .row {
   padding-bottom: 3.3rem;
   padding-top: 5.5rem;
 }
 
-/* line 101, sass/pages/_home.scss */
+/* line 105, sass/pages/_home.scss */
 .partnership-logos {
   padding-top: 2rem;
 }
 
-/* line 106, sass/pages/_home.scss */
+/* line 110, sass/pages/_home.scss */
 .contact-area {
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -9405,34 +9411,34 @@ label {
   background-position: top center;
   padding-top: 3.5rem;
 }
-/* line 114, sass/pages/_home.scss */
+/* line 118, sass/pages/_home.scss */
 .contact-area p {
   font-size: .9375rem;
   color: #4b4a4a;
 }
-/* line 119, sass/pages/_home.scss */
+/* line 123, sass/pages/_home.scss */
 .contact-area h4 {
   font-weight: bold;
   font-size: 1.3125rem;
   color: #333333;
 }
 
-/* line 126, sass/pages/_home.scss */
+/* line 130, sass/pages/_home.scss */
 .contact-section {
   padding-top: 4.5rem;
   padding-bottom: 1.5rem;
 }
 
-/* line 134, sass/pages/_home.scss */
+/* line 138, sass/pages/_home.scss */
 .contact-form form {
   padding-bottom: .3rem;
 }
-/* line 138, sass/pages/_home.scss */
+/* line 142, sass/pages/_home.scss */
 .contact-form button, .contact-form .button {
   font-size: 16px;
 }
 
-/* line 144, sass/pages/_home.scss */
+/* line 148, sass/pages/_home.scss */
 form button {
   float: right !important;
 }
@@ -9564,30 +9570,30 @@ nav {
     padding-top: 0rem !important;
   }
 
-  /* line 15, sass/_mediaqueries.scss */
-  .splash {
+  /* line 16, sass/_mediaqueries.scss */
+  .splash .section {
     padding-top: 8rem !important;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 24, sass/_mediaqueries.scss */
+  /* line 27, sass/_mediaqueries.scss */
   .section {
     padding-left: 50px;
     padding-right: 50px;
   }
 
-  /* line 29, sass/_mediaqueries.scss */
+  /* line 32, sass/_mediaqueries.scss */
   .main-header {
     padding-left: 50px;
   }
 
-  /* line 33, sass/_mediaqueries.scss */
+  /* line 36, sass/_mediaqueries.scss */
   .contact-area {
     padding-top: 0rem;
     padding-bottom: 3rem;
   }
 
-  /* line 38, sass/_mediaqueries.scss */
+  /* line 41, sass/_mediaqueries.scss */
   .contact-header-button {
     background-color: #1f3f8b;
   }
@@ -9616,17 +9622,23 @@ nav {
 
   /* line 62, sass/_mediaqueries.scss */
   .our-customers {
-    padding-top: 12.5rem;
-    padding-bottom: 12.5rem;
     background-color: transparent;
+    background-position: right top;
   }
-  /* line 67, sass/_mediaqueries.scss */
+  /* line 66, sass/_mediaqueries.scss */
   .our-customers h2 {
     color: #000000;
   }
-  /* line 70, sass/_mediaqueries.scss */
+  /* line 69, sass/_mediaqueries.scss */
   .our-customers p {
     color: #333333;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 80, sass/_mediaqueries.scss */
+  .our-customers .row {
+    padding-top: 12.5rem;
+    padding-bottom: 12.5rem;
   }
 }
 /* line 2, sass/vendor/wordpress/_gravity.scss */

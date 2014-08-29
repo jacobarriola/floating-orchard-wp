@@ -1,19 +1,21 @@
  <?php get_header(); ?>
       <!--begin Splash -->
-      <div class="row splash section" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?php bloginfo('template_directory'); ?>/img/splash.png, (medium)]">
-        <div class="large-12 columns">
-          <div class="row">
-            <div class="large-6 columns end">
-              <h1>Floating Orchard</h1>
-            </div> 
-          </div>
-          <div class="row">
-            <div class="medium-7 large-5 columns end">
-              <p><strong>A quality of business service for the Apple platform.</strong>  Floating Orchard Cloud Services help firms of every size use their Apple devices. We automate forward-thinking solutions so you can focus on productivity. For Mac®, iPhone® and iPad®. </p> 
-              <a href="#contact-form"><button>Free Trial</button></a>
+      <div class="splash" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?php bloginfo('template_directory'); ?>/img/splash.png, (medium)]">
+        <div class="row section">
+          <div class="large-12 columns">
+            <div class="row">
+              <div class="large-6 columns end">
+                <h1>Floating Orchard</h1>
+              </div> 
+            </div>
+            <div class="row">
+              <div class="medium-7 large-5 columns end">
+                <p><strong>A quality of business service for the Apple platform.</strong>  Floating Orchard Cloud Services help firms of every size use their Apple devices. We automate forward-thinking solutions so you can focus on productivity. For Mac®, iPhone® and iPad®. </p> 
+                <a href="#contact-form"><button>Free Trial</button></a>
+              </div>
             </div>
           </div>
-        </div>
+        </div><!--end row -->  
       </div><!--end Splash -->
 
       <!-- begin Core Commitments -->
@@ -89,11 +91,13 @@
         </div> <!-- end Core Commitments -->
          
       <!-- begin Our Customers -->
-      <div class="row our-customers section" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?php bloginfo('template_directory'); ?>/img/customer.png, (medium)]">
-        <div class="medium-4 columns">
-          <h2>Our Customers</h2>
-          <p>Floating Orchard Cloud Services and Solutions empower your Apple management needs, whether you are the Office Techie or a whole Tech Department. We help you streamline your endpoints so everyone stays on the same page with less effort.</p>
-        </div>
+      <div class="our-customers" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?php bloginfo('template_directory'); ?>/img/customer.png, (medium)]">
+        <div class="row section">
+          <div class="medium-5 large-4 columns">
+            <h2>Our Customers</h2>
+            <p>Floating Orchard Cloud Services and Solutions empower your Apple management needs, whether you are the Office Techie or a whole Tech Department. We help you streamline your endpoints so everyone stays on the same page with less effort.</p>
+          </div>
+        </div><!-- end row -->
       </div><!-- end Our Customers -->
 
       <!-- begin Cloud Technologies -->
@@ -131,15 +135,17 @@
       </div><!-- end Partnerships -->
 
       <!-- begin Contact Area -->
-      <div class="row contact-area section" id="contact-form" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (default)], [<?php bloginfo('template_directory'); ?>/img/mapcopy.jpg, (medium)]">
-        <!--begin Contact Form -->
-        <div class="columns contact-section">
-          <div class="contact-form">
-            <a name="contactform"></a>
-            <h4>Get a Quote &amp; Free Trial</h4>
-            <p>Fill out the form below to try Floating Orchard.</p>
-            <?php gravity_form(1, false, false, false, '', false); ?>
-          </div><!--end Contact Form -->
+      <div class="contact-area" id="contact-form" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (default)], [<?php bloginfo('template_directory'); ?>/img/mapcopy.jpg, (medium)]">
+        <div class="row section">  
+          <!--begin Contact Form -->
+          <div class="columns contact-section">
+            <div class="contact-form">
+              <a name="contactform"></a>
+              <h4>Get a Quote &amp; Free Trial</h4>
+              <p>Fill out the form below to try Floating Orchard.</p>
+              <?php gravity_form(1, false, false, false, '', false); ?>
+            </div><!--end Contact Form -->
+          </div>
         </div>
       </div><!-- end Contact Area -->
 <?php get_footer(); ?>
