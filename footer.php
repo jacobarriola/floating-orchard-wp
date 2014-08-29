@@ -7,7 +7,7 @@
 ?>
 
       <!-- begin Footer -->
-      <footer>
+      <div class="footer-primary">
           <div class="row section footer-first-section">
             <div class="large-3 columns">
               <h5>Contact</h5>
@@ -27,18 +27,20 @@
               <p class="disclaimer">The Casper Suite is a trademark of JAMF Software.  Mac, iOS, iPhone and iPad are trademarks of Apple Inc.  All other brands and trademarks are the property of their respective owners.</p>
             </div> 
           </div> 
+      </div><!--end footer-primary -->
 
+      <div class="footer-secondary">
           <div class="row section footer-second-section">
             <div class="medium-8 columns">
               <p>&copy; <?php echo date("Y") ?> Floating Orchard Inc.
                 New York, NY.  All Rights Reserved</p>
             </div>
-            <!--
-            <div class="medium-4 columns medium-text-right">
+  
+            <!--<div class="medium-4 columns medium-text-right">
               <p><strong>Contact | Terms of Service</strong></p>
-            </div>
-          </div> -->
-      </footer><!-- end Footer --> 
+            </div>-->
+          </div> 
+      </div><!-- end footer-secondary --> 
 
     
     <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.js"></script>

@@ -9301,7 +9301,7 @@ label {
 }
 
 /* line 1, sass/pages/_home.scss */
-.horizontal-pipe-bottom, .splash, .our-customers, .cloud-technologies {
+.horizontal-pipe-bottom, .splash, .our-customers, .cloud-technologies .row {
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -9369,32 +9369,35 @@ label {
 }
 
 /* line 75, sass/pages/_home.scss */
-.partnerships, .cloud-technologies {
+.partnerships, .cloud-technologies .row {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
 }
 /* line 80, sass/pages/_home.scss */
-.partnerships h2, .cloud-technologies h2 {
+.partnerships h2, .cloud-technologies .row h2 {
   color: #333333;
 }
 /* line 84, sass/pages/_home.scss */
-.partnerships p, .cloud-technologies p {
+.partnerships p, .cloud-technologies .row p {
   color: #4b4a4a;
 }
 
 /* line 90, sass/pages/_home.scss */
 .cloud-technologies {
-  padding-bottom: 3.3rem;
-  padding-top: 5.5rem;
   background: #f7f7f7;
 }
+/* line 93, sass/pages/_home.scss */
+.cloud-technologies .row {
+  padding-bottom: 3.3rem;
+  padding-top: 5.5rem;
+}
 
-/* line 98, sass/pages/_home.scss */
+/* line 101, sass/pages/_home.scss */
 .partnership-logos {
   padding-top: 2rem;
 }
 
-/* line 103, sass/pages/_home.scss */
+/* line 106, sass/pages/_home.scss */
 .contact-area {
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -9402,34 +9405,34 @@ label {
   background-position: top center;
   padding-top: 3.5rem;
 }
-/* line 111, sass/pages/_home.scss */
+/* line 114, sass/pages/_home.scss */
 .contact-area p {
   font-size: .9375rem;
   color: #4b4a4a;
 }
-/* line 116, sass/pages/_home.scss */
+/* line 119, sass/pages/_home.scss */
 .contact-area h4 {
   font-weight: bold;
   font-size: 1.3125rem;
   color: #333333;
 }
 
-/* line 123, sass/pages/_home.scss */
+/* line 126, sass/pages/_home.scss */
 .contact-section {
   padding-top: 4.5rem;
   padding-bottom: 1.5rem;
 }
 
-/* line 131, sass/pages/_home.scss */
+/* line 134, sass/pages/_home.scss */
 .contact-form form {
   padding-bottom: .3rem;
 }
-/* line 135, sass/pages/_home.scss */
+/* line 138, sass/pages/_home.scss */
 .contact-form button, .contact-form .button {
   font-size: 16px;
 }
 
-/* line 141, sass/pages/_home.scss */
+/* line 144, sass/pages/_home.scss */
 form button {
   float: right !important;
 }
@@ -9444,18 +9447,21 @@ form button {
   margin-bottom: 1.5rem;
 }
 
-/* line 2, sass/_header.scss */
-.main-header {
-  text-transform: uppercase;
+/* line 1, sass/_header.scss */
+.header {
   background: #284b9f;
-  height: 6.5rem;
-  position: relative;
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
+  height: 6.5rem;
+}
+/* line 6, sass/_header.scss */
+.header .main-header {
+  text-transform: uppercase;
+  position: relative;
 }
 /* line 9, sass/_header.scss */
-.main-header a {
+.header .main-header a {
   color: white;
 }
 
@@ -9496,48 +9502,55 @@ nav {
   padding-bottom: .3rem;
 }
 
-/* line 3, sass/_footer.scss */
-footer p {
+/* line 1, sass/_footer.scss */
+.footer-primary {
+  background: #e65336;
+}
+/* line 4, sass/_footer.scss */
+.footer-primary p {
   color: #eeeeee;
   font-size: .9rem;
 }
-/* line 8, sass/_footer.scss */
-footer a {
+/* line 9, sass/_footer.scss */
+.footer-primary a {
   color: #eeeeee;
 }
-/* line 11, sass/_footer.scss */
-footer a:hover {
+/* line 12, sass/_footer.scss */
+.footer-primary a:hover {
   color: #ae2c11;
 }
-/* line 16, sass/_footer.scss */
-footer .footer-first-section {
-  background: #e65336;
+/* line 17, sass/_footer.scss */
+.footer-primary .disclaimer {
+  color: #ae2c11;
+}
+/* line 21, sass/_footer.scss */
+.footer-primary .footer-first-section {
   padding-top: 45px;
   padding-bottom: 45px;
 }
-/* line 21, sass/_footer.scss */
-footer .footer-first-section h5 {
+/* line 26, sass/_footer.scss */
+.footer-primary .footer-first-section h5 {
   text-transform: uppercase;
   font-size: .9rem;
   color: #ae2c11;
   font-weight: bold;
   line-height: 3;
 }
-/* line 31, sass/_footer.scss */
-footer .footer-second-section {
+
+/* line 39, sass/_footer.scss */
+.footer-secondary {
   background: #cd4023;
+}
+/* line 42, sass/_footer.scss */
+.footer-secondary .footer-second-section {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 35, sass/_footer.scss */
-footer .footer-second-section p {
+/* line 46, sass/_footer.scss */
+.footer-secondary .footer-second-section p {
   color: #961f06;
   margin-bottom: 0px;
-}
-
-/* line 42, sass/_footer.scss */
-.disclaimer {
-  color: #ae2c11;
+  font-size: .9rem;
 }
 
 @media only screen and (max-width: 40.063em) {

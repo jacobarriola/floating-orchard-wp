@@ -1,15 +1,15 @@
-
-.main-header {
-	text-transform: uppercase;
+.header {
 	background: $secondary-color;
-	height: 6.5rem;
-	position: relative;
 	@include single-box-shadow;
-
-	a {
-		color: white;
+	height: 6.5rem;
+	
+	.main-header {
+		text-transform: uppercase;
+		position: relative;
+		a {
+			color: white;
+		}
 	}
-
 }
 
 nav {

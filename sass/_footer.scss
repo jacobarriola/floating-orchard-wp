@@ -1,5 +1,6 @@
-footer {
-
+.footer-primary {
+	background: $primary-color;
+	
 	p {
 		color: $footer-body-color;
 		font-size: .9rem;
@@ -12,9 +13,13 @@ footer {
 			color: $footer-header-color;
 		}
 	}
+	
+	.disclaimer {
+		color: $footer-header-color;
+	}
 
 	.footer-first-section {
-		background: $primary-color;
+
 		padding-top: 45px;
 		padding-bottom: 45px;
 
@@ -27,18 +32,22 @@ footer {
 
 		}
 	}
+}
 
-	.footer-second-section {
-		background: $footer-secondary-color;
+
+
+.footer-secondary {
+background: $footer-secondary-color;
+
+	.footer-second-section {	
 		padding-top: 15px;
 		padding-bottom: 15px;
+
 		p {
 			color: $footer-tertiary-color;
 			margin-bottom: 0px;
+			font-size: .9rem;
 		}
 	}
 }
 
-.disclaimer {
-	color: $footer-header-color;
-}

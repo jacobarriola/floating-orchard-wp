@@ -97,14 +97,16 @@
       </div><!-- end Our Customers -->
 
       <!-- begin Cloud Technologies -->
-      <div class="row cloud-technologies section">
-        <div class="large-12 columns text-center">
-         <img src="<?php bloginfo('template_directory'); ?>/img/devices.png" alt="Image of devices" />
-        </div>
-        <div class="medium-8 large-6 medium-centered columns text-center">
-          <h2>Cloud Technologies</h2>
-          <p>Floating Orchard follows you and your users anywhere on the planet because the mobile workforce is the new offce. <br> <strong>Powered by the Casper Suite.</strong></p>
-        </div>
+      <div class="cloud-technologies section">
+        <div class="row">
+          <div class="large-12 columns text-center">
+           <img src="<?php bloginfo('template_directory'); ?>/img/devices.png" alt="Image of devices" />
+          </div>
+          <div class="medium-8 large-6 medium-centered columns text-center">
+            <h2>Cloud Technologies</h2>
+            <p>Floating Orchard follows you and your users anywhere on the planet because the mobile workforce is the new offce. <br> <strong>Powered by the Casper Suite.</strong></p>
+          </div>
+        </div>  
       </div><!-- end Cloud Technologies -->
 
       <!-- begin Partnerships -->

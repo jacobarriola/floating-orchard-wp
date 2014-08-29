@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * Displays all of the <head> section and everything up till <div id="content">
+ * Displays all of the <head> section and everything up till <div class="main-header">
  *
  * @package Floating Orchard
  */
@@ -25,7 +25,9 @@ gravity_form_enqueue_scripts(1, true);
 
 <body <?php body_class(); ?>>
   <!--begin HEADER -->
-	<div class="main-header row">
-      <div class="logo-image"></div>
-      <div class="contact-header-button text-center">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
+	<div class="header">
+		<div class="main-header row">
+	      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="logo-image"></div></a>
+	      <div class="contact-header-button text-center">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
+    	</div><!-- end row -->
     </div><!--end HEADER -->

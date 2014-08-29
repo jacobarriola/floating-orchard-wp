@@ -88,11 +88,14 @@
 }
 
 .cloud-technologies {
-	@extend .partnerships;
-	@extend .horizontal-pipe-bottom;
-	padding-bottom: 3.3rem;
-	padding-top: 5.5rem;
 	background: $tertiary-color;
+	
+	.row {
+		@extend .partnerships;
+		@extend .horizontal-pipe-bottom;
+		padding-bottom: 3.3rem;
+		padding-top: 5.5rem;
+	}
 }
 
 .partnership-logos {
