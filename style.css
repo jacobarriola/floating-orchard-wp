@@ -9291,10 +9291,11 @@ button, .button {
 
 /* line 33, sass/_global.scss */
 .page-container {
-  margin-top: 9rem;
+  margin-top: 7rem;
+  margin-bottom: 8rem;
 }
 
-/* line 38, sass/_global.scss */
+/* line 39, sass/_global.scss */
 label {
   display: none !important;
 }
@@ -9431,6 +9432,16 @@ label {
 /* line 141, sass/pages/_home.scss */
 form button {
   float: right !important;
+}
+
+/* line 1, sass/pages/_page.scss */
+.page-container {
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+}
+/* line 5, sass/pages/_page.scss */
+.page-container h1 {
+  margin-bottom: 1.5rem;
 }
 
 /* line 2, sass/_header.scss */
