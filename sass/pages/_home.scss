@@ -1,0 +1,145 @@
+.horizontal-pipe-bottom {
+	border-bottom: 1px solid $horizontal-pipe-color;	
+}
+
+.horizontal-pipe-top {
+	border-top: 1px solid $horizontal-pipe-color;
+}
+
+.splash {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-color: $tertiary-color;
+	padding-bottom: 2.6rem;
+	padding-top: 15rem;
+	@extend .horizontal-pipe-bottom;
+
+	p {
+		color: #333333;
+	}
+
+}
+
+.commitment-content {
+	padding-bottom: 2.8rem;
+}
+
+
+.core-commitments {
+	padding-top: 4.5rem;
+	padding-bottom: 4.5rem;
+
+	p {
+		color: #4b4a4a;
+	}
+
+}
+
+.orchard-features {
+
+	h3 {
+		color: #4b4a4a;
+		font-size: 20px;
+	}
+
+	p {
+		color: #666666;
+		font-size: .875rem;
+	}
+
+}
+
+
+
+
+
+.our-customers {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-color: #2b2b2b;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	@extend .horizontal-pipe-bottom;
+	@extend .horizontal-pipe-top;
+
+	h2 {
+		color: #f2f2f2;
+	}
+	p {
+		color: #dddddd;
+	}
+}
+
+.partnerships {
+	padding-top: 4.5rem;
+	padding-bottom: 4.5rem;
+
+
+	h2 {
+		color: #333333;
+	}
+
+	p {
+		color: #4b4a4a;
+	}
+
+}
+
+.cloud-technologies {
+	@extend .partnerships;
+	@extend .horizontal-pipe-bottom;
+	padding-bottom: 3.3rem;
+	padding-top: 5.5rem;
+	background: $tertiary-color;
+}
+
+.partnership-logos {
+	padding-top: 2rem;
+}
+
+
+.contact-area {
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	padding-top: 3.5rem;
+	@extend .horizontal-pipe-top; 
+
+	p {
+		font-size: .9375rem;
+		color: #4b4a4a;
+	}
+
+	h4 {
+		font-weight: bold;
+		font-size: 1.3125rem;
+		color: #333333;
+	}
+}
+
+.contact-section {
+
+	padding-top: 4.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.contact-form {
+	
+	form {
+		padding-bottom: .3rem;
+	}
+
+	button, .button {
+		font-size: 16px;
+	}
+}
+
+form {
+	button {
+		float: right !important;
+	}
+}
+

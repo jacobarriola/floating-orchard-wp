@@ -1,0 +1,45 @@
+
+.main-header {
+	text-transform: uppercase;
+	background: $secondary-color;
+	height: 6.5rem;
+	position: relative;
+	@include single-box-shadow;
+
+	a {
+		color: white;
+	}
+
+}
+
+nav {
+	position: relative;
+}
+
+.logo-image {
+	position: absolute;
+	background: #ffffff url('img/logo.jpg') no-repeat; width: 116px; height: 187px;
+	@include single-box-shadow(#aaaaaa);
+}
+
+
+.contact-header-button {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding-top: 29px;
+	padding-bottom: 25px;
+	padding-left: 40px;
+	padding-right: 40px;
+	height: 6.5rem;
+	text-transform: none;
+	color: white;
+	line-height: 1.65rem;
+}
+
+.phone-icon {
+	padding-right: .4em;
+	padding-bottom: .3rem;
+
+}
+

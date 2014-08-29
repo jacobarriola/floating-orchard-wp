@@ -1,0 +1,44 @@
+footer {
+
+	p {
+		color: $footer-body-color;
+		font-size: .9rem;
+	}
+
+	a { 
+		color: $footer-body-color;
+		
+		&:hover {
+			color: $footer-header-color;
+		}
+	}
+
+	.footer-first-section {
+		background: $primary-color;
+		padding-top: 45px;
+		padding-bottom: 45px;
+
+		h5 {
+			text-transform: uppercase;
+			font-size: .9rem;
+			color: $footer-header-color;
+			font-weight: bold;
+			line-height: 3;
+
+		}
+	}
+
+	.footer-second-section {
+		background: $footer-secondary-color;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		p {
+			color: $footer-tertiary-color;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.disclaimer {
+	color: $footer-header-color;
+}

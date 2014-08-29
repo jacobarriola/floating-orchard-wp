@@ -1,0 +1,74 @@
+// Small screen stuff
+@media only screen and (max-width: 40.063em) {
+
+	.contact-form {
+
+		button, .button {
+			width: 100%;
+		}
+	}
+
+	.contact-section {
+		padding-top: 0rem !important;
+	}
+
+	.splash {
+		padding-top: 8rem !important;
+	}
+
+}
+
+// Medium and up stuff
+
+@media only screen and (min-width: 40.063em) {
+	.section {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.main-header {
+		padding-left: 50px;
+	}
+
+	.contact-area {
+		padding-top: 0rem;
+		padding-bottom: 3rem;
+	}
+
+	.contact-header-button {
+		background-color: #1f3f8b;
+	}
+	.contact-section {
+
+	}
+
+	.contact-form {
+		background-color: #ffffff;
+		padding-top: 40px;
+		padding-left: 25px;
+		padding-right: 25px;
+		width: 330px;
+		@include single-box-shadow(#999999);
+	}
+
+	.icon-row {
+		padding-bottom: .6rem;
+		}
+
+	.first-row-icons {
+		padding-bottom: 4rem;
+	}
+
+	.our-customers {
+		padding-top: 12.5rem;
+		padding-bottom: 12.5rem;
+		background-color: transparent;
+
+		h2 {
+			color: #000000;
+		}
+		p {
+			color: #333333;
+		}
+	}
+}

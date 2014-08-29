@@ -1,0 +1,36 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;;
+}
+
+
+.row {
+	max-width: $row-width;
+}
+
+
+
+h1,h2,h3 {
+	font-weight: bold;
+}
+
+
+button, .button {
+	margin-top: 1.5rem;
+	background-color: $primary-color;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	font-size: 20px;
+	border-radius: $default-border-radius;
+}
+
+
+.main-section {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+
+label {
+  display: none !important;
+}
