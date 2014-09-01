@@ -1295,23 +1295,24 @@ meta.foundation-mq-topbar {
       height: 45px;
       line-height: 45px; }
     .top-bar .toggle-topbar.menu-icon {
-      right: 15px;
       top: 50%;
-      margin-top: -16px;
-      padding-left: 40px; }
+      margin-top: -16px; }
       .top-bar .toggle-topbar.menu-icon a {
         height: 34px;
         line-height: 33px;
-        padding: 0;
+        padding: 0px 40px 0px 15px;
         color: white;
         position: relative; }
         .top-bar .toggle-topbar.menu-icon a::after {
           right: 0; }
-          .top-bar .toggle-topbar.menu-icon a::after span:after {
+          .top-bar .toggle-topbar.menu-icon a span::after {
             content: '';
             position: absolute;
             display: block;
             height: 0;
+            top: 50%;
+            margin-top: -8px;
+            right: 15px;
             box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
             width: 16px; }
           .top-bar .toggle-topbar.menu-icon a::after span:hover:after {

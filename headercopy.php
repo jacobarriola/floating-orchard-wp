@@ -26,23 +26,20 @@ gravity_form_enqueue_scripts(1, true);
 
 <body <?php body_class(); ?>>
   <!--begin HEADER -->
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Floating Orchard</a></h1>
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-	  </ul>
+	<div class="header">
+		<div class="main-header row">
+	      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="logo-image"></div></a>
 
+	      <ul class="title-area">
+	      	<li class="toggle-topbar menu-icon"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span>Menu</span></a></li>
+	      </ul>
 
 
 		<?php
             wp_nav_menu( array(
                 'theme_location'    =>	'Primary Menu',
                 'menu'				=>	'Main Menu',
-                'depth'             =>	3,
-                'container'			=>	'div',
+                'container'			=>	'nav',
                 'container_class'	=>	'top-bar-section',
                 'menu_class'		=>	'left',
                 'walker'			=>	new Foundation_Walker_Nav_Menu()
@@ -50,5 +47,6 @@ gravity_form_enqueue_scripts(1, true);
             );
         ?>
 
-        <div class="contact-header-button text-center">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
-    </nav><!--end HEADER -->
+	      <div class="contact-header-button text-center">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
+    	</div><!-- end row -->
+    </div><!--end HEADER -->

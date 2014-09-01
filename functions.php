@@ -134,3 +134,6 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 add_filter("gform_confirmation_anchor", 
 create_function("","return true;"));
+
+// Custom Navigation Walker for Foundation https://github.com/kurtaschliman/Foundation-Wordpress-Nav-Walker
+require get_template_directory() . '/inc/foundation-walker-nav-menu.php';
