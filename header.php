@@ -26,28 +26,31 @@ gravity_form_enqueue_scripts(1, true);
 
 <body <?php body_class(); ?>>
   <!--begin HEADER -->
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo-image show-for-medium-up"></span><span class="show-for-small-only">Floating Orchard</span></a></h1>
-	    </li>
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-	  </ul>
+	<div class="header-primary">
+    <div class="top-bar row section" data-topbar role="navigation">   
+    	    <ul class="title-area">
+        	    <li class="name">
+        	      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo-image show-for-medium-up"></span><span class="show-for-small-only">Floating Orchard</span></a></h1>
+        	    </li>
+        	    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    	    </ul>
 
 
 
-		<?php
-            wp_nav_menu( array(
-                'theme_location'    =>	'Primary Menu',
-                'menu'				=>	'Main Menu',
-                'depth'             =>	3,
-                'container'			=>	'div',
-                'container_class'	=>	'top-bar-section',
-                'menu_class'		=>	'left header',
-                'walker'			=>	new Foundation_Walker_Nav_Menu()
-                )
-            );
-        ?>
+    		<?php
+                wp_nav_menu( array(
+                    'theme_location'    =>	'Primary Menu',
+                    'menu'				=>	'Main Menu',
+                    'depth'             =>	3,
+                    'container'			=>	'div',
+                    'container_class'	=>	'top-bar-section',
+                    'menu_class'		=>	'left header',
+                    'walker'			=>	new Foundation_Walker_Nav_Menu()
+                    )
+                );
+            ?>
 
-        <div class="contact-header-button text-center show-for-medium-up">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
-    </nav><!--end HEADER -->
+    
+        <span class="contact-header-button text-center show-for-medium-up">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</span>
+    </div>
+    </div><!--end HEADER -->

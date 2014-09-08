@@ -1,4 +1,4 @@
-// Small screen stuff
+// Small screen stuff only
 @media only screen and (max-width: 40.063em) {
 
 	.contact-form {
@@ -18,7 +18,10 @@
 		}
 	}
 
-
+    .top-bar-section li:not(.has-form) a:not(.button) {
+      padding: 0 15px;
+      line-height: 45px;
+	}
 
 }
 
@@ -39,21 +42,18 @@
 		padding-bottom: 3rem;
 	}
 
-	/*.contact-header-button {
-		background-color: #1f3f8b;
-	}*/
 	.contact-header-button {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	padding-top: 29px;
-	padding-bottom: 25px;
+	padding-top: 27px;
 	padding-left: 40px;
 	padding-right: 40px;
 	height: 6.5rem;
 	text-transform: none;
 	color: white;
 	line-height: 1.65rem;
+	background-color: #1f3f8b;
 }
 
 	.contact-form {
@@ -87,6 +87,15 @@
 
 	.top-bar {
 	height: 6.5rem;
+	}
+
+	.header-primary {
+		@include single-box-shadow;
+		background: $secondary-color;
+	}
+
+	.header {
+		margin-left: 130px !important;
 	}
 
 }

@@ -2465,7 +2465,7 @@ meta.foundation-mq-topbar {
 
 /* line 1325, sass/vendor/_foundation.scss */
 .top-bar.expanded .toggle-topbar a {
-  color: #888888;
+  color: #fff;
 }
 
 /* line 1327, sass/vendor/_foundation.scss */
@@ -2510,12 +2510,13 @@ meta.foundation-mq-topbar {
   display: block;
   width: 100%;
   color: white;
-  padding: 12px 0 12px 0;
+  padding: 27px 0 12px 0;
   padding-left: 15px;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 0.8125rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
+  /* 14px/16px */
   font-weight: normal;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 /* line 1360, sass/vendor/_foundation.scss */
@@ -2881,7 +2882,7 @@ meta.foundation-mq-topbar {
 
   /* line 1554, sass/vendor/_foundation.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
-    padding: 0 15px;
+    padding: 30px 25px 29px 25px;
     line-height: 45px;
   }
 
@@ -2892,7 +2893,7 @@ meta.foundation-mq-topbar {
 
   /* line 1559, sass/vendor/_foundation.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
-    padding: 0 15px;
+    padding: 30px 25px 29px 25px;
     line-height: 45px;
     color: white;
     background: #008cba;
@@ -2918,7 +2919,7 @@ meta.foundation-mq-topbar {
     border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
     border-top-style: solid;
     margin-top: -2.5px;
-    top: 22.5px;
+    top: 52px;
   }
 
   /* line 1578, sass/vendor/_foundation.scss */
@@ -9449,17 +9450,15 @@ form button {
 
 /* line 3, sass/_header.scss */
 .header {
-  /*@include single-box-shadow;*/
-  margin-left: 150px !important;
   text-transform: uppercase !important;
 }
 
-/* line 10, sass/_header.scss */
+/* line 7, sass/_header.scss */
 nav {
   position: relative;
 }
 
-/* line 14, sass/_header.scss */
+/* line 11, sass/_header.scss */
 .logo-image {
   position: absolute;
   background: white url("img/logo.jpg") no-repeat;
@@ -9470,30 +9469,35 @@ nav {
   box-shadow: 0px 0px 5px #aaaaaa;
 }
 
-/* line 23, sass/_header.scss */
+/* line 20, sass/_header.scss */
 .phone-icon {
   padding-right: .4em;
   padding-bottom: .3rem;
 }
 
-/* line 29, sass/_header.scss */
+/* line 26, sass/_header.scss */
 .top-bar-section li a:not(.button) {
   background: #284b9f !important;
 }
 
-/* line 33, sass/_header.scss */
+/* line 30, sass/_header.scss */
 .top-bar-section li a:not(.button):hover {
   background: #1F3F8B !important;
 }
 
-/* line 37, sass/_header.scss */
+/* line 34, sass/_header.scss */
 .top-bar-section ul li.active > a {
   background: #1F3F8B !important;
 }
 
-/* line 41, sass/_header.scss */
+/* line 38, sass/_header.scss */
 .top-bar-section ul li.active > a:hover {
   background: #1F3F8B !important;
+}
+
+/* line 43, sass/_header.scss */
+.top-bar-section ul li > a {
+  text-transform: uppercase;
 }
 
 /* line 1, sass/_footer.scss */
@@ -9562,41 +9566,44 @@ nav {
   .splash .section {
     padding-top: 8rem !important;
   }
+
+  /* line 21, sass/_mediaqueries.scss */
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 15px;
+    line-height: 45px;
+  }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 28, sass/_mediaqueries.scss */
+  /* line 31, sass/_mediaqueries.scss */
   .section {
     padding-left: 50px;
     padding-right: 50px;
   }
 
-  /* line 33, sass/_mediaqueries.scss */
+  /* line 36, sass/_mediaqueries.scss */
   .main-header {
     padding-left: 50px;
   }
 
-  /* line 37, sass/_mediaqueries.scss */
+  /* line 40, sass/_mediaqueries.scss */
   .contact-area {
     padding-top: 0rem;
     padding-bottom: 3rem;
   }
 
-  /*.contact-header-button {
-  	background-color: #1f3f8b;
-  }*/
   /* line 45, sass/_mediaqueries.scss */
   .contact-header-button {
     position: absolute;
     top: 0px;
     right: 0px;
-    padding-top: 29px;
-    padding-bottom: 25px;
+    padding-top: 27px;
     padding-left: 40px;
     padding-right: 40px;
     height: 6.5rem;
     text-transform: none;
     color: white;
     line-height: 1.65rem;
+    background-color: #1f3f8b;
   }
 
   /* line 59, sass/_mediaqueries.scss */
@@ -9639,9 +9646,22 @@ nav {
   .top-bar {
     height: 6.5rem;
   }
+
+  /* line 92, sass/_mediaqueries.scss */
+  .header-primary {
+    -webkit-box-shadow: 0px 0px 5px #333333;
+    -moz-box-shadow: 0px 0px 5px #333333;
+    box-shadow: 0px 0px 5px #333333;
+    background: #284b9f;
+  }
+
+  /* line 97, sass/_mediaqueries.scss */
+  .header {
+    margin-left: 130px !important;
+  }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 99, sass/_mediaqueries.scss */
+  /* line 108, sass/_mediaqueries.scss */
   .our-customers .row {
     padding-top: 12.5rem;
     padding-bottom: 12.5rem;

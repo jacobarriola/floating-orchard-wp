@@ -1,9 +1,6 @@
 
 
 .header {
-
-	/*@include single-box-shadow;*/
-	margin-left: 150px !important;
 	text-transform: uppercase !important;
 }
 
@@ -42,3 +39,8 @@ nav {
     background: #1F3F8B !important;   
 }
 
+.top-bar-section {
+	ul li > a {
+		text-transform: uppercase;
+	}
+}
