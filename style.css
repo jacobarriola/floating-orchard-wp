@@ -2328,7 +2328,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #333333;
+  background: #284b9f;
   margin-bottom: 0;
 }
 
@@ -2455,12 +2455,12 @@ meta.foundation-mq-topbar {
 /* line 1320, sass/vendor/_foundation.scss */
 .top-bar.expanded {
   height: auto;
-  background: transparent;
+  background: #284b9f;
 }
 
 /* line 1323, sass/vendor/_foundation.scss */
 .top-bar.expanded .title-area {
-  background: #333333;
+  background: #284b9f;
 }
 
 /* line 1325, sass/vendor/_foundation.scss */
@@ -2799,7 +2799,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.063em) {
   /* line 1512, sass/vendor/_foundation.scss */
   .top-bar {
-    background: #333333;
+    background: #284b9f;
     overflow: visible;
   }
 
@@ -9449,6 +9449,11 @@ form button {
 }
 
 /* line 1, sass/_header.scss */
+nav {
+  height: 6.5rem;
+}
+
+/* line 5, sass/_header.scss */
 .header {
   background: #284b9f;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -9456,22 +9461,22 @@ form button {
   box-shadow: 0px 0px 5px #333333;
   height: 6.5rem;
 }
-/* line 6, sass/_header.scss */
+/* line 10, sass/_header.scss */
 .header .main-header {
   text-transform: uppercase;
   position: relative;
 }
-/* line 9, sass/_header.scss */
+/* line 13, sass/_header.scss */
 .header .main-header a {
   color: white;
 }
 
-/* line 15, sass/_header.scss */
+/* line 19, sass/_header.scss */
 nav {
   position: relative;
 }
 
-/* line 19, sass/_header.scss */
+/* line 23, sass/_header.scss */
 .logo-image {
   position: absolute;
   background: white url("img/logo.jpg") no-repeat;
@@ -9482,7 +9487,7 @@ nav {
   box-shadow: 0px 0px 5px #aaaaaa;
 }
 
-/* line 26, sass/_header.scss */
+/* line 30, sass/_header.scss */
 .contact-header-button {
   position: absolute;
   top: 0px;
@@ -9497,7 +9502,7 @@ nav {
   line-height: 1.65rem;
 }
 
-/* line 40, sass/_header.scss */
+/* line 44, sass/_header.scss */
 .phone-icon {
   padding-right: .4em;
   padding-bottom: .3rem;
@@ -9628,9 +9633,14 @@ nav {
   .our-customers p {
     color: #333333;
   }
+
+  /* line 74, sass/_mediaqueries.scss */
+  .top-bar {
+    height: 6.5rem;
+  }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 80, sass/_mediaqueries.scss */
+  /* line 84, sass/_mediaqueries.scss */
   .our-customers .row {
     padding-top: 12.5rem;
     padding-bottom: 12.5rem;

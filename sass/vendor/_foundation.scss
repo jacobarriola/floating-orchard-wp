@@ -1243,7 +1243,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #333333;
+  background: $topbar-bg-color;
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
@@ -1319,9 +1319,9 @@ meta.foundation-mq-topbar {
             box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white; }
   .top-bar.expanded {
     height: auto;
-    background: transparent; }
+    background: $topbar-bg-color; }
     .top-bar.expanded .title-area {
-      background: #333333; }
+      background: $topbar-bg-color; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a::after {
@@ -1510,7 +1510,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #333333;
+    background: $topbar-bg-color;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";

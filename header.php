@@ -26,7 +26,7 @@ gravity_form_enqueue_scripts(1, true);
 
 <body <?php body_class(); ?>>
   <!--begin HEADER -->
-	<nav class="top-bar" data-topbar role="navigation">
+	<nav class="top-bar header" data-topbar role="navigation">
 	  <ul class="title-area">
 	    <li class="name">
 	      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Floating Orchard</a></h1>
@@ -50,5 +50,5 @@ gravity_form_enqueue_scripts(1, true);
             );
         ?>
 
-        <div class="contact-header-button text-center">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
+        <!--<div class="contact-header-button text-center show-for-medium-and-up">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>-->
     </nav><!--end HEADER -->
