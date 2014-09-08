@@ -26,12 +26,11 @@ gravity_form_enqueue_scripts(1, true);
 
 <body <?php body_class(); ?>>
   <!--begin HEADER -->
-	<nav class="top-bar header" data-topbar role="navigation">
+	<nav class="top-bar" data-topbar role="navigation">
 	  <ul class="title-area">
 	    <li class="name">
-	      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Floating Orchard</a></h1>
+	      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo-image show-for-medium-up"></span><span class="show-for-small-only">Floating Orchard</span></a></h1>
 	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 	    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
 	  </ul>
 
@@ -44,11 +43,11 @@ gravity_form_enqueue_scripts(1, true);
                 'depth'             =>	3,
                 'container'			=>	'div',
                 'container_class'	=>	'top-bar-section',
-                'menu_class'		=>	'left',
+                'menu_class'		=>	'left header',
                 'walker'			=>	new Foundation_Walker_Nav_Menu()
                 )
             );
         ?>
 
-        <!--<div class="contact-header-button text-center show-for-medium-and-up">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>-->
+        <div class="contact-header-button text-center show-for-medium-up">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
     </nav><!--end HEADER -->

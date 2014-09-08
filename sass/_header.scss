@@ -1,19 +1,10 @@
-nav {
-	height: 6.5rem;
-}
+
 
 .header {
-	background: $secondary-color;
-	@include single-box-shadow;
-	height: 6.5rem;
-	
-	.main-header {
-		text-transform: uppercase;
-		position: relative;
-		a {
-			color: white;
-		}
-	}
+
+	/*@include single-box-shadow;*/
+	margin-left: 150px !important;
+	text-transform: uppercase !important;
 }
 
 nav {
@@ -27,23 +18,27 @@ nav {
 }
 
 
-.contact-header-button {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	padding-top: 29px;
-	padding-bottom: 25px;
-	padding-left: 40px;
-	padding-right: 40px;
-	height: 6.5rem;
-	text-transform: none;
-	color: white;
-	line-height: 1.65rem;
-}
+
 
 .phone-icon {
 	padding-right: .4em;
 	padding-bottom: .3rem;
 
+}
+
+.top-bar-section li a:not(.button) {
+    background: $secondary-color !important;   
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: #1F3F8B !important;   
+}
+
+.top-bar-section ul li.active > a {
+    background: #1F3F8B !important;   
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: #1F3F8B !important;   
 }
 
