@@ -11,7 +11,6 @@ nav {
 .logo-image {
 	position: absolute;
 	background: #ffffff url('img/logo.jpg') no-repeat; width: 116px; height: 187px;
-	@include single-box-shadow(#aaaaaa);
 }
 
 

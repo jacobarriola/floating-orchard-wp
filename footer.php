@@ -11,20 +11,20 @@
           <div class="row section footer-first-section">
             <div class="large-3 columns">
               <h5>Contact</h5>
-              <p><a href="mailto:sales@floatingorchard.com">sales@floatingorchard.com</a><br>
-                (888) 970-8870</p>
+              <!-- ACF 'Footer Contact' field -->
+              <?php the_field( 'text_contact', 'option' ); ?>
             </div> 
 
             <div class="large-3 columns">
               <h5>Address</h5>
-              <p>236-250 Greenpoint Ave<br>
-                Box 12<br>
-                Brooklyn, NY 11222</p>
+              <!-- ACF 'Footer Address' field -->
+              <?php the_field( 'text_address', 'option' ); ?>
             </div> 
 
-            <div class="large-6 columns">
+            <div class="large-6 columns disclaimer">
               <h5>Disclaimer</h5>
-              <p class="disclaimer">The Casper Suite is a trademark of JAMF Software.  Mac, iOS, iPhone and iPad are trademarks of Apple Inc.  All other brands and trademarks are the property of their respective owners.</p>
+                <!-- ACF 'Footer Disclaimer' field -->
+                <?php the_field( 'text_disclaimer', 'option' ); ?>
             </div> 
           </div> 
       </div><!--end footer-primary -->

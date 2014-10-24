@@ -1,6 +1,7 @@
  <?php get_header(); ?>
       <!--begin Splash -->
-      <div class="splash" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?php bloginfo('template_directory'); ?>/img/splash.png, (medium)]">
+      <?php $bga = get_field('bg_a'); ?>
+      <div class="splash" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?=$bga?>, (medium)]">
         <div class="row section">
           <div class="large-12 columns">
             <div class="row">
@@ -10,7 +11,8 @@
             </div>
             <div class="row">
               <div class="medium-7 large-5 columns end">
-                <p><strong>A quality of business service for the Apple platform.</strong>  Floating Orchard Cloud Services help firms of every size use their Apple devices. We automate forward-thinking solutions so you can focus on productivity. For Mac®, iPhone® and iPad®. </p> 
+                <!-- ACF 'hero text' field -->
+                <?php the_field( 'hero_text' ); ?>
                 <a href="#contact-form"><button>Free Trial</button></a>
               </div>
             </div>
@@ -24,7 +26,8 @@
             <div class="row commitment-content">
               <div class="medium-8 large-7 medium-centered columns">
                 <h2>Core Commitments</h2>
-                <p>Floating Orchard Cloud Services ensure your Apple desktops, laptops and mobile devices meet IT best practices. That’s not just good business, it's peace of mind.</p>
+                <!-- ACF 'hero text' field -->
+                <?php the_field( 'core_commitments' ); ?>
               </div>
             </div>
 
@@ -91,11 +94,13 @@
         </div> <!-- end Core Commitments -->
          
       <!-- begin Our Customers -->
-      <div class="our-customers" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?php bloginfo('template_directory'); ?>/img/customer.png, (medium)]">
+      <?php $bgb = get_field('bg_b'); ?>
+      <div class="our-customers" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?=$bgb?>, (medium)]">
         <div class="row section">
           <div class="medium-5 large-4 columns">
             <h2>Our Customers</h2>
-            <p>Floating Orchard Cloud Services and Solutions empower your Apple management needs, whether you are the Office Techie or a whole Tech Department. We help you streamline your endpoints so everyone stays on the same page with less effort.</p>
+              <!-- ACF 'our customers' field -->
+              <?php the_field( 'our_customers' ); ?>
           </div>
         </div><!-- end row -->
       </div><!-- end Our Customers -->
@@ -108,7 +113,8 @@
           </div>
           <div class="medium-8 large-6 medium-centered columns text-center">
             <h2>Cloud Technologies</h2>
-            <p>Floating Orchard follows you and your users anywhere on the planet because the mobile workforce is the new offce. <br> <strong>Powered by the Casper Suite.</strong></p>
+              <!-- ACF 'cloud technologies' field -->
+              <?php the_field( 'cloud_technologies' ); ?>
           </div>
         </div>  
       </div><!-- end Cloud Technologies -->
@@ -119,7 +125,8 @@
           <div class="row">
             <div class="medium-8 large-5 medium-centered columns text-center">
               <h2>Partnerships</h2>
-              <p>Excellent requires Teamwork.</p>
+              <!-- ACF 'partnerships' field -->
+              <?php the_field( 'partnerships' ); ?>
             </div>
           </div>
   
@@ -135,7 +142,8 @@
       </div><!-- end Partnerships -->
 
       <!-- begin Contact Area -->
-      <div class="contact-area" id="contact-form" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (default)], [<?php bloginfo('template_directory'); ?>/img/mapcopy.jpg, (medium)]">
+      <?php $bgc = get_field('bg_c'); ?>
+      <div class="contact-area" id="contact-form" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?=$bgc?>, (medium)]">
         <div class="row section">  
           <!--begin Contact Form -->
           <div class="columns contact-section">

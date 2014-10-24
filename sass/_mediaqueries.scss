@@ -1,5 +1,8 @@
 // Small screen stuff only
 @media only screen and (max-width: 40.063em) {
+	.top-bar {
+		background-color: $secondary-color;
+	}
 
 	.contact-form {
 
@@ -23,6 +26,10 @@
       line-height: 45px;
 	}
 
+	.page-container {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	}
 }
 
 // Medium and up stuff
@@ -62,7 +69,6 @@
 		padding-left: 25px;
 		padding-right: 25px;
 		width: 330px;
-		@include single-box-shadow(#999999);
 	}
 
 	.icon-row {
@@ -90,19 +96,30 @@
 	}
 
 	.header-primary {
-		@include single-box-shadow;
 		background: $secondary-color;
 	}
 
 	.header {
-		margin-left: 130px !important;
+		margin-left: 160px !important;
 	}
 
 	.top-bar-section .sub-menu li a {
     padding: 0px 25px !important;
   }
 
+	  .page-container {
+		margin-top: 7rem;
+		margin-bottom: 8rem;
+
+		h1 {
+			margin-bottom: 1.5rem;
+		}
+	}
+
 }
+
+
+
 
 // Large stuff
 @media only screen and (min-width: 64.063em) {

@@ -497,8 +497,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     float: left; }
 
   .medium-1 {
@@ -845,8 +845,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     float: left; }
 
   .large-1 {
@@ -1243,7 +1243,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: $topbar-bg-color;
+
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;

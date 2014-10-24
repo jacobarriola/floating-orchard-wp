@@ -5,6 +5,25 @@
  * @package Floating Orchard
  */
 
+//ACF Options setup
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+}
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -92,8 +111,11 @@ add_action( 'widgets_init', 'floatingorchard_widgets_init' );
  * Enqueue scripts and styles.
  */
 function floatingorchard_scripts() {
+
+	/* Add Stylesheet */
 	wp_enqueue_style( 'floatingorchard-style', get_stylesheet_uri() );
 
+	/* Add Navigation js */
 	wp_enqueue_script( 'floatingorchard-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'floatingorchard-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -103,6 +125,16 @@ function floatingorchard_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'floatingorchard_scripts' );
+
+/* Add Foundation menu functionality to wp_nav_menu */
+function floatingorchard_nav_menu($menu){
+
+	$menu = str_replace('menu-item-has-children', 'menu-item-has-children has-dropdown', $menu);
+	$menu = str_replace('sub-menu', 'sub-menu dropdown', $menu);
+	return $menu;
+
+}
+add_filter('wp_nav_menu','floatingorchard_nav_menu');
 
 /**
  * Implement the Custom Header feature.
@@ -137,3 +169,7 @@ create_function("","return true;"));
 
 // Custom Navigation Walker for Foundation https://github.com/kurtaschliman/Foundation-Wordpress-Nav-Walker
 require get_template_directory() . '/inc/foundation-walker-nav-menu.php';
+
+
+
+
