@@ -14,7 +14,7 @@
 		background-color: $tertiary-color;
 	.section {
 		padding-bottom: 2.6rem;
-		padding-top: 15rem;
+		padding-top: 4.5rem;
 	}
 	p {
 		color: #333333;
@@ -148,5 +148,21 @@ form {
 	button {
 		float: right !important;
 	}
+}
+
+// Small screen stuff only
+@media only screen and (max-width: 40.063em) {
+
+}
+
+// Medium and up stuff
+
+@media only screen and (min-width: 40.063em) {
+.splash {
+	.section {
+		padding-bottom: 2.6rem;
+		padding-top: 15rem;
+	}
+}
 }
 

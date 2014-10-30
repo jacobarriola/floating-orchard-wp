@@ -1,8 +1,5 @@
 // Small screen stuff only
 @media only screen and (max-width: 40.063em) {
-	.top-bar {
-		background-color: $secondary-color;
-	}
 
 	.contact-form {
 
@@ -13,12 +10,6 @@
 
 	.contact-section {
 		padding-top: 0rem !important;
-	}
-
-	.splash {
-		.section {
-			padding-top: 8rem !important;
-		}
 	}
 
     .top-bar-section li:not(.has-form) a:not(.button) {

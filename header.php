@@ -27,14 +27,14 @@ gravity_form_enqueue_scripts(1, true);
 
 <body <?php body_class(); ?>>
   <!--begin HEADER -->
-	<div class="header-primary">
+	<div class="header-primary sticky">
         <!-- Foundation top-bar navigation start -->
         <nav class="top-bar row section" data-topbar role="navigation">   
     	    <ul class="title-area">
         	    <li class="name">
-        	      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span class="logo-image show-for-medium-up"></span><span class="show-for-small-only">Floating Orchard</span></a></h1>
+        	      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo-container"><img src="<?php bloginfo('template_directory'); ?>/img/logo-small.png"></a>
         	    </li>
-        	    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+        	    <li class="toggle-topbar menu-icon"><a href="#"><span class="hamburger"></span></a></li>
     	    </ul>
             <section class="top-bar-section header">
                 <!-- Begin Wordpress Menu -->

@@ -6,13 +6,12 @@ Author:  Jacob Arriola
 Author URI:  http://jacobarriola.com
 Version: 1
 */
-
-// Global Foundation Settings
-@import "vendor/foundation/settings";
-@import "vendor/foundation/components/top-bar";
-
 // Normalize
 @import "vendor/_normalize.scss";
+
+// Global Foundation Settings
+/*@import "vendor/foundation/settings";*/
+@import "vendor/foundation/components/_top-bar.scss";
 
 // Foundation
 @import "vendor/_foundation.scss";

@@ -4,15 +4,49 @@
 	text-transform: uppercase !important;
 }
 
+.top-bar,
+.title-area {
+	background-color: white;
+	height: 6.5rem;
+}
+
+.top-bar.expanded {
+	.title-area {
+	background: #fff !important;
+	}
+}
+
+.logo-container {
+	padding-top: 10px;
+	padding-left: 1.5rem;
+	display: inline-block;
+}
+
+.menu-icon {
+	right: 15px !important;
+
+	a {
+		color: #222 !important;
+		cursor: pointer;
+		.hamburger {
+			&:after {
+				-webkit-box-shadow: rgb(119, 119, 119) 0px 0px 0px 3px, rgb(119, 119, 119) 0px 7px 0px 3px, rgb(119, 119, 119) 0px 14px 0px 3px !important;
+				box-shadow: rgb(119, 119, 119) 0px 0px 0px 3px, rgb(119, 119, 119) 0px 9px 0px 3px, rgb(119, 119, 119) 0px 18px 0px 3px !important;
+				width: 20px !important;
+			}
+		}
+	}
+}
+
+
 nav {
 	position: relative;
 }
 
 .logo-image {
 	position: absolute;
-	background: #ffffff url('img/logo.jpg') no-repeat; width: 116px; height: 187px;
+	background: #ffffff url('img/logo-small.png') no-repeat; width: 160px; height: 83px;
 }
-
 
 
 
@@ -22,24 +56,43 @@ nav {
 
 }
 
+.top-bar-section {
+	ul {
+		li > a {
+			color: #333 !important;
+			text-align: center;
+			text-transform: uppercase;
+
+		}
+		li {
+			border-bottom: 1px solid #ddd;
+		}
+	}
+	.has-dropdown > a:after {
+		border-color: transparent transparent transparent rgba(119, 119, 119, 1) !important;
+	}
+}
+
+
 .top-bar-section li a:not(.button) {
-    background: $secondary-color !important;   
+    background: #fff !important;   
 }
 
 .top-bar-section li a:not(.button):hover {
-    background: #1F3F8B !important;   
+    background: #ddd !important;   
 }
 
-.top-bar-section ul li.active > a {
-    background: #1F3F8B !important;   
+
+
+// Small screen stuff only
+@media only screen and (max-width: 40.063em) {
+
 }
 
-.top-bar-section ul li.active > a:hover {
-    background: #1F3F8B !important;   
-}
 
-.top-bar-section {
-	ul li > a {
-		text-transform: uppercase;
+// Large stuff
+@media only screen and (min-width: 64.063em) {
+	.logo-image {
+		background: #ffffff url('img/logo.png') no-repeat; width: 116px; height: 187px;
 	}
 }
