@@ -70,8 +70,8 @@ $topbar-menu-icon-color-toggled: #888 !default;
 // Transitions and breakpoint styles
 $topbar-transition-speed: 300ms !default;
 // Using rem-calc for the below breakpoint causes issues with top bar
-$topbar-breakpoint: #{lower-bound($medium-range)} !default; // Change to 9999px for always mobile layout
-$topbar-media-query: $medium-up !default;
+$topbar-breakpoint: 9999px; // Change to 9999px for always mobile layout
+$topbar-media-query: $large-up !default;
 
 // Divider Styles
 $topbar-divider-border-bottom: solid 1px scale-color($topbar-bg-color, $lightness: 13%) !default;
@@ -258,7 +258,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
         .toggle-topbar {
           a { color: $topbar-menu-link-color-toggled;
             &::after {
-              // Shh, don't tell, but box-shadows create the menu icon :)
+              // Shh, dont tell, but box-shadows create the menu icon :)
               box-shadow: 0 10px 0 1px $topbar-menu-icon-color-toggled,
                           0 16px 0 1px $topbar-menu-icon-color-toggled,
                           0 22px 0 1px $topbar-menu-icon-color-toggled;

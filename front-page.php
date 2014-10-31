@@ -1,7 +1,7 @@
  <?php get_header(); ?>
       <!--begin Splash -->
-      <?php $bga = get_field('bg_a'); ?>
-      <div class="splash" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?=$bga?>, (medium)]">
+
+      <div class="hero-container">
         <div class="row section">
           <div class="large-12 columns">
             <div class="row">
@@ -19,6 +19,7 @@
           </div>
         </div><!--end row -->  
       </div><!--end Splash -->
+    </div>
 
       <!-- begin Core Commitments -->
         <div class="row text-center core-commitments section">

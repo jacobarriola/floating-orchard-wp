@@ -6,21 +6,13 @@
 	border-top: 1px solid $horizontal-pipe-color;
 }
 
-.splash {
+.hero-container {
+	padding-top: 3rem;
+	padding-bottom: 4.5rem;
 	@extend .horizontal-pipe-bottom;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: top center;
-		background-color: $tertiary-color;
-	.section {
-		padding-bottom: 2.6rem;
-		padding-top: 4.5rem;
-	}
-	p {
-		color: #333333;
-	}
-
 }
+
+
 
 .commitment-content {
 	padding-bottom: 2.8rem;
@@ -152,7 +144,9 @@ form {
 
 // Small screen stuff only
 @media only screen and (max-width: 40.063em) {
-
+	.hero-container {
+		background-color: $tertiary-color;
+	}
 }
 
 // Medium and up stuff

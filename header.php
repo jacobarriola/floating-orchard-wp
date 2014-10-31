@@ -27,26 +27,28 @@ gravity_form_enqueue_scripts(1, true);
 
 <body <?php body_class(); ?>>
   <!--begin HEADER -->
-	<div class="header-primary sticky">
-        <!-- Foundation top-bar navigation start -->
-        <nav class="top-bar row section" data-topbar role="navigation">   
-    	    <ul class="title-area">
-        	    <li class="name">
-        	      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo-container"><img src="<?php bloginfo('template_directory'); ?>/img/logo-small.png"></a>
-        	    </li>
-        	    <li class="toggle-topbar menu-icon"><a href="#"><span class="hamburger"></span></a></li>
-    	    </ul>
-            <section class="top-bar-section header">
-                <!-- Begin Wordpress Menu -->
-        		<?php
-                    wp_nav_menu( array(
-                        'theme_location'    =>	'Primary Menu',
-                        'menu'				=>	'Main Menu',
-                        )
-                    );
-                ?>
-            </section>
-            <div class="contact-header-button text-center show-for-large-up">Contact<br><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
-        </nav>
-        <!-- Foundation top-bar navigation end -->
-    </div><!--end HEADER -->
+    <?php $bga = get_field('bg_a'); ?>
+    <div class="splash-container" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?=$bga?>, (medium)]">
+    	<div class="header-primary">
+            <!-- Foundation top-bar navigation start -->
+            <nav class="top-bar row section" data-topbar role="navigation">   
+        	    <ul class="title-area">
+            	    <li class="name">
+            	      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo-container"><img src="<?php bloginfo('template_directory'); ?>/img/logo-small.png" class="show-for-small-only"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" class="site-logo show-for-medium-up"></a>
+            	    </li>
+            	    <li class="toggle-topbar menu-icon"><a href="#"><span class="hamburger"></span></a></li>
+        	    </ul>
+                <section class="top-bar-section header">
+                    <!-- Begin Wordpress Menu -->
+            		<?php
+                        wp_nav_menu( array(
+                            'theme_location'    =>	'Primary Menu',
+                            'menu'				=>	'Main Menu',
+                            )
+                        );
+                    ?>
+                </section>
+                <div class="contact-header-button text-center show-for-large-up"><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
+            </nav>
+            <!-- Foundation top-bar navigation end -->
+        </div><!--end HEADER -->
