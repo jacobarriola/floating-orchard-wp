@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * Displays all of the <head> section and everything up till <div class="main-header">
+ * Displays all of the <head> section and everything up till the end of <div class="header-primary"> container
  *
  * @package Floating Orchard
  */
@@ -18,7 +18,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr.js"></script>
 <?php
 gravity_form_enqueue_scripts(1, true);
-// Keep mouse position at form after submission
+// Keep mouse position at form after submission rather than default behavior which pushes to top of page
 ?>
 
 
@@ -26,11 +26,10 @@ gravity_form_enqueue_scripts(1, true);
 </head>
 
 <body <?php body_class(); ?>>
-  <!--begin HEADER -->
     <?php $bga = get_field('bg_a'); ?>
     <div class="splash-container" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?=$bga?>, (medium)]">
     	<div class="header-primary">
-            <!-- Foundation top-bar navigation start -->
+            <!-- begin top-bar -->
             <nav class="top-bar row section" data-topbar role="navigation">   
         	    <ul class="title-area">
             	    <li class="name">
@@ -39,8 +38,8 @@ gravity_form_enqueue_scripts(1, true);
             	    <li class="toggle-topbar menu-icon"><a href="#"><span class="hamburger"></span></a></li>
         	    </ul>
                 <section class="top-bar-section header">
-                    <!-- Begin Wordpress Menu -->
             		<?php
+                    // WordPress menu
                         wp_nav_menu( array(
                             'theme_location'    =>	'Primary Menu',
                             'menu'				=>	'Main Menu',
@@ -49,6 +48,5 @@ gravity_form_enqueue_scripts(1, true);
                     ?>
                 </section>
                 <div class="contact-header-button text-center show-for-large-up"><img src="<?php bloginfo('template_directory'); ?>/img/phone.png" class="phone-icon">(888) 970-8890</div>
-            </nav>
-            <!-- Foundation top-bar navigation end -->
-        </div><!--end HEADER -->
+            </nav><!-- end top-bar -->
+        </div><!-- end header-primary -->

@@ -72,7 +72,7 @@ nav {
 		}
 	}
 	.has-dropdown > a:after {
-		border-color: transparent transparent transparent rgba(119, 119, 119, 1) !important;
+		border-color: #333 transparent transparent transparent !important;
 	}
 	.back {
 		h5 {
@@ -87,15 +87,19 @@ nav {
 }
 
 
-.top-bar-section li a:not(.button):hover {
+/*.top-bar-section li a:not(.button):hover {
     background: #ddd !important;   
-}
+}*/
 
 
 
 // Small screen stuff only
 @media only screen and (max-width: 40.063em) {
-
+	.top-bar-section {
+	.has-dropdown > a:after {
+		border-color: transparent transparent transparent rgba(119, 119, 119, 1) !important;
+	}
+	}
 }
 
 // Medium and up
@@ -111,6 +115,31 @@ nav {
 		background-position: top center;
 		background-color: $tertiary-color;
 	}
+
+	.header-primary {
+		position: relative;
+
+
+		&:after {
+			content: "";
+		    opacity: 0.9;
+			top: 0;
+		    left: 0;
+		  	bottom: 0;
+		  	right: 0;
+		  	position: absolute;
+  
+			bbackground: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 81%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(81%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 81%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 81%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 81%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 81%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+		}
+	}
+
 	.top-bar-section {
 		ul {
 			li {
@@ -127,6 +156,7 @@ nav {
 	.top-bar, 
 	.title-area {
 		background-color: transparent;
+				z-index: 1;
 	}
 
 	.contact-header-button {

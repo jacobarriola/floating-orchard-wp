@@ -6578,16 +6578,19 @@ nav {
 .top-bar-section li a:not(.button) {
   background: #fff !important; }
 .top-bar-section .has-dropdown > a:after {
-  border-color: transparent transparent transparent #777777 !important; }
+  border-color: #333 transparent transparent transparent !important; }
 .top-bar-section .back h5 a {
   color: #333 !important;
   text-align: center;
   font-size: 14px;
   line-height: 45px !important; }
 
-.top-bar-section li a:not(.button):hover {
-  background: #ddd !important; }
-
+/*.top-bar-section li a:not(.button):hover {
+    background: #ddd !important;   
+}*/
+@media only screen and (max-width: 40.063em) {
+  .top-bar-section .has-dropdown > a:after {
+    border-color: transparent transparent transparent #777777 !important; } }
 @media only screen and (min-width: 40.063em) {
   .site-logo {
     margin-right: 50px;
@@ -6599,6 +6602,31 @@ nav {
     background-position: top center;
     background-color: #f7f7f7; }
 
+  .header-primary {
+    position: relative; }
+    .header-primary:after {
+      content: "";
+      opacity: 0.9;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      bbackground: -moz-linear-gradient(top, white 0%, white 81%, rgba(255, 255, 255, 0) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(81%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, white 0%, white 81%, rgba(255, 255, 255, 0) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, white 0%, white 81%, rgba(255, 255, 255, 0) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, white 0%, white 81%, rgba(255, 255, 255, 0) 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, white 0%, white 81%, rgba(255, 255, 255, 0) 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+      /* IE6-9 */ }
+
   .top-bar-section ul li {
     border: none; }
     .top-bar-section ul li a:not(.button) {
@@ -6606,7 +6634,8 @@ nav {
 
   .top-bar,
   .title-area {
-    background-color: transparent; }
+    background-color: transparent;
+    z-index: 1; }
 
   .contact-header-button {
     position: absolute;
