@@ -6761,12 +6761,6 @@ nav {
       margin-bottom: 0px;
       font-size: .9rem; }
 
-@media only screen and (min-width: 40.063em) {
-  .page-container {
-    margin-top: 7rem;
-    margin-bottom: 8rem; }
-    .page-container h1 {
-      margin-bottom: 1.5rem; } }
 body .gform_wrapper form .gform_body ul,
 body .gform_wrapper form .gform_body ul li {
   list-style-type: none !important;
