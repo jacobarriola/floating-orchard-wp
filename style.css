@@ -362,7 +362,6 @@ td,
 th {
   padding: 0; }
 
-/*@import "vendor/foundation/components/_top-bar.scss";*/
 meta.foundation-version {
   font-family: "/5.2.3/"; }
 
@@ -2045,7 +2044,7 @@ meta.foundation-mq-topbar {
     color: white; }
 
   .top-bar-section li:not(.has-form) a:not(.button) {
-    padding: 30px 25px 29px 25px;
+    padding: 30px 25px 15px 25px;
     line-height: 45px; }
 
   .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -6421,7 +6420,6 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
-/*@import "vendor/foundation/components/_magellan.scss";*/
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
@@ -6446,6 +6444,21 @@ button, .button {
 label {
   display: none !important; }
 
+@media only screen and (max-width: 40.063em) {
+  .contact-form button, .contact-form .button {
+    width: 100%; }
+
+  .contact-section {
+    padding-top: 0rem !important; }
+
+  .page-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
+
+  .row .row {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0; } }
 .horizontal-pipe-bottom, .hero-container, .our-customers, .cloud-technologies .row {
   border-bottom: 1px solid #eeeeee; }
 
@@ -6534,7 +6547,42 @@ form button {
 @media only screen and (min-width: 40.063em) {
   .splash .section {
     padding-bottom: 2.6rem;
-    padding-top: 15rem; } }
+    padding-top: 15rem; }
+
+  .contact-area {
+    padding-top: 0rem;
+    padding-bottom: 3rem; }
+
+  .contact-form {
+    background-color: #ffffff;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 330px; }
+
+  .icon-row {
+    padding-bottom: .6rem; }
+
+  .first-row-icons {
+    padding-bottom: 4rem; }
+
+  .our-customers {
+    background-color: transparent;
+    background-position: right top; }
+    .our-customers h2 {
+      color: #000000; }
+    .our-customers p {
+      color: #333333; } }
+@media only screen and (min-width: 64.063em) {
+  .our-customers .row {
+    padding-top: 12.5rem;
+    padding-bottom: 12.5rem; } }
+@media only screen and (min-width: 40.063em) {
+  .page-container {
+    margin-top: 7rem;
+    margin-bottom: 8rem; }
+    .page-container h1 {
+      margin-bottom: 1.5rem; } }
 .header {
   text-transform: uppercase !important; }
 
@@ -6566,7 +6614,7 @@ nav {
 
 .phone-icon {
   padding-right: .4em;
-  padding-bottom: .3rem; }
+  height: 20px; }
 
 .top-bar-section ul li > a {
   color: #333 !important;
@@ -6590,8 +6638,21 @@ nav {
 }*/
 @media only screen and (max-width: 40.063em) {
   .top-bar-section .has-dropdown > a:after {
-    border-color: transparent transparent transparent #777777 !important; } }
+    border-color: transparent transparent transparent #777777 !important; }
+
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 15px;
+    line-height: 45px; } }
 @media only screen and (min-width: 40.063em) {
+  .top-bar {
+    height: 6.5rem; }
+
+  .header {
+    margin-left: 160px !important; }
+
+  .top-bar-section .sub-menu li a {
+    padding: 0px 25px !important; }
+
   .site-logo {
     margin-right: 50px;
     margin-top: 10px; }
@@ -6627,10 +6688,19 @@ nav {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
       /* IE6-9 */ }
 
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 30px 25px 15px 25px; }
+
   .top-bar-section ul li {
     border: none; }
     .top-bar-section ul li a:not(.button) {
       background: transparent !important; }
+  .top-bar-section .dropdown {
+    background: black;
+    border: 1px solid gray; }
+    .top-bar-section .dropdown li a {
+      color: white !important;
+      font-size: 75%; }
 
   .top-bar,
   .title-area {
@@ -6642,16 +6712,19 @@ nav {
     top: 0px;
     right: 0px;
     padding-top: 40px;
-    padding-left: 40px;
     padding-right: 40px;
     height: 6.5rem;
     text-transform: none;
     color: #333;
-    line-height: 1.65rem; }
+    line-height: 1.65rem;
+    font-size: 0.875rem; }
 
   .hero-container {
     padding-top: 12rem;
-    padding-bottom: 4rem; } }
+    padding-bottom: 4rem; }
+
+  .main-header {
+    padding-left: 50px; } }
 @media only screen and (min-width: 64.063em) {
   .logo-image {
     background: white url("img/logo.png") no-repeat;
@@ -6688,71 +6761,12 @@ nav {
       margin-bottom: 0px;
       font-size: .9rem; }
 
-@media only screen and (max-width: 40.063em) {
-  .contact-form button, .contact-form .button {
-    width: 100%; }
-
-  .contact-section {
-    padding-top: 0rem !important; }
-
-  .top-bar-section li:not(.has-form) a:not(.button) {
-    padding: 0 15px;
-    line-height: 45px; }
-
-  .page-container {
-    margin-top: 1rem;
-    margin-bottom: 2rem; } }
 @media only screen and (min-width: 40.063em) {
-  /*.section {
-  	padding-left: 50px;
-  	padding-right: 50px;
-  }*/
-  .main-header {
-    padding-left: 50px; }
-
-  .contact-area {
-    padding-top: 0rem;
-    padding-bottom: 3rem; }
-
-  .contact-form {
-    background-color: #ffffff;
-    padding-top: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 330px; }
-
-  .icon-row {
-    padding-bottom: .6rem; }
-
-  .first-row-icons {
-    padding-bottom: 4rem; }
-
-  .our-customers {
-    background-color: transparent;
-    background-position: right top; }
-    .our-customers h2 {
-      color: #000000; }
-    .our-customers p {
-      color: #333333; }
-
-  .top-bar {
-    height: 6.5rem; }
-
-  .header {
-    margin-left: 160px !important; }
-
-  .top-bar-section .sub-menu li a {
-    padding: 0px 25px !important; }
-
   .page-container {
     margin-top: 7rem;
     margin-bottom: 8rem; }
     .page-container h1 {
       margin-bottom: 1.5rem; } }
-@media only screen and (min-width: 64.063em) {
-  .our-customers .row {
-    padding-top: 12.5rem;
-    padding-bottom: 12.5rem; } }
 body .gform_wrapper form .gform_body ul,
 body .gform_wrapper form .gform_body ul li {
   list-style-type: none !important;

@@ -1,87 +1,14 @@
-// Small screen stuff only
-@media only screen and (max-width: 40.063em) {
 
-	.contact-form {
-
-		button, .button {
-			width: 100%;
-		}
-	}
-
-	.contact-section {
-		padding-top: 0rem !important;
-	}
-
-    .top-bar-section li:not(.has-form) a:not(.button) {
-      padding: 0 15px;
-      line-height: 45px;
-	}
-
-	.page-container {
-	margin-top: 1rem;
-	margin-bottom: 2rem;
-	}
-}
 
 // Medium and up stuff
 
 @media only screen and (min-width: 40.063em) {
-	/*.section {
-		padding-left: 50px;
-		padding-right: 50px;
-	}*/
-
-	.main-header {
-		padding-left: 50px;
-	}
-
-	.contact-area {
-		padding-top: 0rem;
-		padding-bottom: 3rem;
-	}
 
 
 
-	.contact-form {
-		background-color: #ffffff;
-		padding-top: 40px;
-		padding-left: 25px;
-		padding-right: 25px;
-		width: 330px;
-	}
-
-	.icon-row {
-		padding-bottom: .6rem;
-		}
-
-	.first-row-icons {
-		padding-bottom: 4rem;
-	}
-
-	.our-customers {
-		background-color: transparent;
-		background-position: right top;
-
-		h2 {
-			color: #000000;
-		}
-		p {
-			color: #333333;
-		}
-	}
-
-	.top-bar {
-	height: 6.5rem;
-	}
 
 
-	.header {
-		margin-left: 160px !important;
-	}
 
-	.top-bar-section .sub-menu li a {
-    padding: 0px 25px !important;
-  }
 
 	  .page-container {
 		margin-top: 7rem;
@@ -97,15 +24,3 @@
 
 
 
-// Large stuff
-@media only screen and (min-width: 64.063em) {
-
-	.our-customers {
-
-		.row {
-			padding-top: 12.5rem;
-			padding-bottom: 12.5rem;
-		}
-	}
-
-}

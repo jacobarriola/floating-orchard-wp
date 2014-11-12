@@ -152,11 +152,55 @@ form {
 // Medium and up stuff
 
 @media only screen and (min-width: 40.063em) {
-.splash {
-	.section {
-		padding-bottom: 2.6rem;
-		padding-top: 15rem;
+	.splash {
+		.section {
+			padding-bottom: 2.6rem;
+			padding-top: 15rem;
+		}
+	}
+	.contact-area {
+		padding-top: 0rem;
+		padding-bottom: 3rem;
+	}
+
+	.contact-form {
+		background-color: #ffffff;
+		padding-top: 40px;
+		padding-left: 25px;
+		padding-right: 25px;
+		width: 330px;
+	}
+
+	.icon-row {
+		padding-bottom: .6rem;
+		}
+
+	.first-row-icons {
+		padding-bottom: 4rem;
+	}
+
+	.our-customers {
+		background-color: transparent;
+		background-position: right top;
+
+		h2 {
+			color: #000000;
+		}
+		p {
+			color: #333333;
+		}
 	}
 }
-}
 
+// Large stuff
+@media only screen and (min-width: 64.063em) {
+
+	.our-customers {
+
+		.row {
+			padding-top: 12.5rem;
+			padding-bottom: 12.5rem;
+		}
+	}
+
+}

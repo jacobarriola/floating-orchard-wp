@@ -25,5 +25,4 @@ get_header(); ?>
 		</div><!-- end columns -->
 	</div><!-- end row -->
 
-
 <?php get_footer(); ?>

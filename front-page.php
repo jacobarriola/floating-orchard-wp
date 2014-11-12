@@ -1,38 +1,30 @@
- <?php get_header(); ?>
-      <!--begin Splash -->
-
+ <?php get_header( 'home' ); ?>
       <div class="hero-container">
         <div class="row section">
-          <div class="large-12 columns">
-            <div class="row">
-              <div class="large-6 columns end">
-                <h1>Floating Orchard</h1>
-              </div> 
-            </div>
-            <div class="row">
-              <div class="medium-7 large-5 columns end">
-                <!-- ACF 'hero text' field -->
-                <?php the_field( 'hero_text' ); ?>
-                <a href="#contact-form"><button>Free Trial</button></a>
-              </div>
-            </div>
+          <div class="large-12 columns end">
+            <h1>Floating Orchard</h1>
+          </div> 
+
+          <div class="medium-7 large-5 columns end">
+            <!-- ACF 'hero text' field -->
+            <?php the_field( 'hero_text' ); ?>
+            <a href="#contact-form"><button>Free Trial</button></a>
           </div>
         </div><!--end row -->  
-      </div><!--end Splash -->
-    </div>
+      </div><!--end .hero-container -->
+    </div><!-- end .splash-container -->
 
       <!-- begin Core Commitments -->
         <div class="row text-center core-commitments section">
-          <div class="column">
-            <div class="row commitment-content">
-              <div class="medium-8 large-7 medium-centered columns">
-                <h2>Core Commitments</h2>
-                <!-- ACF 'hero text' field -->
-                <?php the_field( 'core_commitments' ); ?>
-              </div>
+
+            <div class="medium-8 large-7 medium-centered columns commitment-content">
+              <h2>Core Commitments</h2>
+              <!-- ACF 'hero text' field -->
+              <?php the_field( 'core_commitments' ); ?>
             </div>
 
             <!-- begin first row -->
+            <div class="small-12 column">
             <div class="row text-center orchard-features first-row-icons">
               <div class="medium-4 columns">
                 <div class="row icon-row">
@@ -64,6 +56,7 @@
                 <p>Updates are inevitable.  Floating Orchard automates them, giving you more time to focus on everything else.</p>
               </div>
             </div><!-- end first row -->
+          </div>
 
             <!-- begin second row -->
             <div class="row text-center orchard-features">
@@ -91,7 +84,6 @@
                   <p>Every firm's data is its lifeblood.  Floating Orchard helps you prevent loss with encryption and network security monitoring. Your IP stays safe inside, intruders stay out.</p>
               </div>
             </div><!--end second row-->
-          </div> 
         </div> <!-- end Core Commitments -->
          
       <!-- begin Our Customers -->

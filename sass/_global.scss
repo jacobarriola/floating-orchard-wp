@@ -36,3 +36,30 @@ button, .button {
 label {
   display: none !important;
 }
+
+
+// Small screen stuff only
+@media only screen and (max-width: 40.063em) {
+
+	.contact-form {
+
+		button, .button {
+			width: 100%;
+		}
+	}
+
+	.contact-section {
+		padding-top: 0rem !important;
+	}
+
+	.page-container {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	}
+
+	.row .row {
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+}
