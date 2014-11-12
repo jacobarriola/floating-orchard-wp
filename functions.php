@@ -115,6 +115,24 @@ function floatingorchard_scripts() {
 	/* Add Stylesheet */
 	wp_enqueue_style( 'floatingorchard-style', get_stylesheet_uri() );
 
+	/* remove WP version of jQuery */
+    wp_deregister_script( 'jquery' );
+
+    /* jQuery */
+    wp_enqueue_script ( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', '', '', false );
+
+	/* modernizer */
+	wp_enqueue_script ( 'modernizer', get_template_directory_uri() . '/js/vendor/modernizer.js', '', '', false );
+
+	/* Add fastclick js file */
+	wp_enqueue_script ( 'fastclick_js', get_template_directory_uri() . '/js/vendor/fastclick.js', '', '', true );
+
+	/* Add Foundation js file */
+	wp_enqueue_script ( 'foundation_js', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '', true );
+
+	/* Add app.js file */
+	wp_enqueue_script ( 'app', get_template_directory_uri() . '/js/app.js', '', '', true );
+
 	/* Add Navigation js */
 	wp_enqueue_script( 'floatingorchard-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -167,8 +185,7 @@ require get_template_directory() . '/inc/jetpack.php';
 add_filter("gform_confirmation_anchor", 
 create_function("","return true;"));
 
-// Custom Navigation Walker for Foundation https://github.com/kurtaschliman/Foundation-Wordpress-Nav-Walker
-require get_template_directory() . '/inc/foundation-walker-nav-menu.php';
+
 
 
 
