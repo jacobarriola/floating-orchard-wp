@@ -122,7 +122,7 @@ function floatingorchard_scripts() {
     wp_enqueue_script ( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', '', '', false );
 
 	/* modernizer */
-	wp_enqueue_script ( 'modernizer', get_template_directory_uri() . '/js/vendor/modernizer.js', '', '', false );
+	wp_enqueue_script ( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', '', '', false );
 
 	/* Add fastclick js file */
 	wp_enqueue_script ( 'fastclick_js', get_template_directory_uri() . '/js/vendor/fastclick.js', '', '', true );
