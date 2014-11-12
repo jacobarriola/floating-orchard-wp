@@ -15,7 +15,6 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr.js"></script>
 <?php
 gravity_form_enqueue_scripts(1, true);
 // Keep mouse position at form after submission rather than default behavior which pushes to top of page
@@ -26,8 +25,7 @@ gravity_form_enqueue_scripts(1, true);
 </head>
 
 <body <?php body_class(); ?>>
-    <?php $bga = get_field('bg_a'); ?>
-    <div class="splash-container" data-interchange="[<?php bloginfo('template_directory'); ?>/img/space.png, (small)], [<?=$bga?>, (medium)]">
+
     	<div class="header-primary">
             <!-- begin top-bar -->
             <nav class="top-bar row section" data-topbar role="navigation">   
